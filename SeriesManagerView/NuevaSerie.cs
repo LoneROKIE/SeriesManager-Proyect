@@ -84,7 +84,7 @@ namespace SeriesManagerView
 
                 SerieDAO seriedao = new SerieDAO();
                 seriedao.InsertarSerie(serie);
-                MessageBox.Show("Se agrego la pelicula");
+                MessageBox.Show("Se agrego la Serie!!");
                 this.Hide();
             }
             catch (Exception ex)

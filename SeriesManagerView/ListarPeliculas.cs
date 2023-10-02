@@ -75,7 +75,7 @@ namespace SeriesManagerView
             int? Id = GetIdPeliculas();
             try
             {
-                if(Id != null)
+                if (Id != null)
                 {
                     PeliculaDAO peliculadao = new PeliculaDAO();
                     peliculadao.Eliminar(Id.Value);

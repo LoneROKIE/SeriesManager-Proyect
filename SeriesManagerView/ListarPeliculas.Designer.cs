@@ -37,6 +37,7 @@
             // 
             // dataGridViewListaPeliculas
             // 
+            dataGridViewListaPeliculas.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridViewListaPeliculas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewListaPeliculas.Location = new Point(12, 110);
             dataGridViewListaPeliculas.Name = "dataGridViewListaPeliculas";
@@ -49,17 +50,19 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(237, 9);
+            label1.Font = new Font("GohuFont 11 Nerd Font Mono", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(190, 9);
             label1.Name = "label1";
-            label1.Size = new Size(99, 20);
+            label1.Size = new Size(190, 24);
             label1.TabIndex = 1;
             label1.Text = "Lista Peliculas";
             // 
             // btnEditar
             // 
-            btnEditar.Location = new Point(12, 60);
+            btnEditar.Font = new Font("GohuFont 11 Nerd Font Mono", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnEditar.Location = new Point(14, 62);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(94, 29);
+            btnEditar.Size = new Size(125, 29);
             btnEditar.TabIndex = 2;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = true;
@@ -67,9 +70,10 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(141, 60);
+            btnEliminar.Font = new Font("GohuFont 11 Nerd Font Mono", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnEliminar.Location = new Point(170, 62);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(94, 29);
+            btnEliminar.Size = new Size(125, 29);
             btnEliminar.TabIndex = 3;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
@@ -79,6 +83,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.RosyBrown;
             ClientSize = new Size(582, 456);
             Controls.Add(btnEliminar);
             Controls.Add(btnEditar);

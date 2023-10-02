@@ -37,18 +37,19 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(12, 120);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(529, 275);
+            dataGridView1.Size = new Size(926, 275);
             dataGridView1.TabIndex = 0;
             // 
             // btnEditar
             // 
             btnEditar.Font = new Font("GohuFont 11 Nerd Font Mono", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            btnEditar.Location = new Point(12, 75);
+            btnEditar.Location = new Point(121, 75);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(104, 29);
             btnEditar.TabIndex = 1;
@@ -59,18 +60,20 @@
             // button1
             // 
             button1.Font = new Font("GohuFont 11 Nerd Font Mono", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(131, 75);
+            button1.Location = new Point(292, 75);
             button1.Name = "button1";
             button1.Size = new Size(117, 29);
             button1.TabIndex = 2;
             button1.Text = "Eliminar";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("GohuFont 11 Nerd Font Mono", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(229, 9);
+            label1.ForeColor = Color.Red;
+            label1.Location = new Point(426, 9);
             label1.Name = "label1";
             label1.Size = new Size(76, 21);
             label1.TabIndex = 3;
@@ -80,11 +83,13 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(553, 407);
+            BackColor = Color.FromArgb(128, 128, 255);
+            ClientSize = new Size(980, 407);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(btnEditar);
             Controls.Add(dataGridView1);
+            ForeColor = SystemColors.ActiveCaptionText;
             Name = "ListarSeries";
             Text = "ListarSeries";
             Load += ListarSeries_Load;

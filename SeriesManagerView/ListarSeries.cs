@@ -51,5 +51,24 @@ namespace SeriesManagerView
         {
             Refrescar();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // boton para eliminar
+            int? Id = GetIdSeries();
+            try
+            {
+                if (Id != null)
+                {
+                    SerieDAO seriedao = new SerieDAO();
+                    seriedao.Eliminar(Id.Value);
+                    Refrescar();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en la bd" + ex);
+            }
+        }
     }
 }
